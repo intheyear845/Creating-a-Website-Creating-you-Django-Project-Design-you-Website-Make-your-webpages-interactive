@@ -9,4 +9,5 @@ urlpatterns=[
     path('change_password/', views.getchangepassword,name="ChangePassword"),
     path('my_profile/', views.getmyprofile,name="MyProfile"),
     path('settings_home/', views.getmysettingshome,name="Settings"),
+    path('xyz_home/', views.getxyzhome,name="XYZ"),
 ]

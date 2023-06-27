@@ -18,3 +18,6 @@ def getmyprofile(request):
 
 def getmysettingshome(request):
     return render(request, 'settings.html')
+
+def getxyzhome(request):
+    return render(request, 'xyz.html')
