@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 650px; width: 400px; border: 1px solid; float: left;">
+    <ul>
+        <li><a href="{% url 'cust:MyProfile' %}">My Profile</a></li>
+        <li> <a href="{% url 'cust:ChangePassword' %}">Change Password</a></li>
+        <li> <a href="{% url 'cust:Settings' %}">Settings</a></li>
+    </ul>
+    </div>
+    <div style="height: 650px; width: 900px; float: left; border: 1px solid; margin-left: 20px;">
+    {% block content %}
+    {% endblock %}
+
+</div>
+</body>
+</html>
