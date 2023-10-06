@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+    
+<label for="">Text</label>
+<input type="text" name="" id="abcd">
+<button id="butn">Click here</button>
+
+<label for="">Number 1</label>
+<input type="number" name="" id="n1">
+<label for="">Number 2</label>
+<input type="number" name="" id="n2">
+
+<button id="addnumbers">Add</button>
+
+<label for="">Result</label>
+<input type="number" name="" id="result">
+
+<h1>Lorem ipsum</h1>
+<button id="lor">button</button>
+
+
+<script>
+function fun1(){
+    var data=$('#abcd').val();
+    console.log(data);
+}
+
+$('#butn').click(function(){
+    alert($('#abcd').val());
+})
+
+$('#addnumbers').click(function(){
+    var num1=parseInt($('#n1').val());
+    var num2=parseInt($('#n2').val());
+    var result=num1+num2;
+    $('#result').val(result);
+})
+
+$('#lor').click(function(){
+    // console.log($('h1').html());
+    $('h1').html('Welcome');
+})
+</script>
+
+</body>
+</html>

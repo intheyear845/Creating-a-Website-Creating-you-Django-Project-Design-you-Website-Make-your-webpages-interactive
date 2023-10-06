@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .p1{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="div1" style="border: 1px black solid; height: 700px; width: 500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, vero eveniet consequatur nisi voluptatum quaerat, voluptatibus consequuntur natus, accusamus quod in! Accusamus in, incidunt ad illum ipsam explicabo veniam asperiores, quam voluptas, omnis sunt? Expedita saepe veniam quisquam maxime! Est, non eos qui voluptas quae, esse quam quis labore impedit aperiam, aut molestias. Voluptate libero placeat ex accusamus dolor necessitatibus nulla? Magnam nihil nobis amet delectus quam qui at eius explicabo quas voluptas. Quis expedita nihil voluptatem nostrum rerum eos porro consequatur architecto impedit qui sequi velit unde voluptates vel hic ex, consequuntur laborum quidem repellendus, esse facilis blanditiis at!</div>
+<br>
+<p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod non, enim quaerat eos autem architecto voluptatum tempore eaque tempora nam nulla assumenda aspernatur, qui, facere sit ipsam? Officiis assumenda beatae optio, fugiat numquam ipsam. Quos sunt enim error, dolores eos harum repudiandae nesciunt eaque tenetur voluptate, aspernatur vitae, quam quod commodi mollitia nobis nemo excepturi doloribus laborum ullam provident facilis?</p>
+<button id="b1">Click here</button>
+<button id="b2">Style</button>
+
+<script>
+    $('#b1').click(function(){
+        // $('#div1').empty();
+        $('#div1').remove();
+    })
+    $('#b2').click(function(){
+      $('#para1').addClass('p1');  
+    })
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{% extends "master.html" %}
+{% load static %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'styles/course.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+
+<br>
+<table border="1" cellpadding="3" align="center">
+
+    <tr>
+        <th colspan="2"><h3>Contact Us</h3></th>
+    </tr>
+    <tr>
+        <td>Nmae</td>
+        <td><input type="text" name="" id=""></td>
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td> <input type="radio" name="" id="">Male
+            <input type="radio" name="" id="">Female
+        </td>
+    </tr>
+   
+    <tr>
+        <td>Date of Birth</td>
+        <td> <input type="date" name="" id=""></td>
+    </tr>
+
+    <tr>
+        <td>Mobile</td>
+        <td><input type="text"></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td><input type="text"></td>
+    </tr>
+
+    <tr>
+        <td>Address</td>
+        <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="right"><br><a href="#" class="link_button">Submit</a><br><br></td>
+    </tr>
+
+</table>
+{% endblock %}
+

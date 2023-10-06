@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="{% static 'javascript/script1.js' %}"></script>
+</head>
+<body>
+
+    
+ <button onclick="alert('hello')">Click</button> 
+
+ <button onclick="message()">click</button>
+
+ <button onclick="addnumbers(10,20)">Add</button>
+
+<script>
+    alert('Welcome to Baabtra')
+    function message(){
+        document.write("<h1>Hello</h1>")
+    }
+    // console.log(addnumbers(1,22))
+    d=addnumbers(1,22)
+    console.log(d)
+    function addnumbers(a,b){
+        c=a+b;
+        return c
+        // console.log(c)
+    }
+    myname=prompt('please enter your name')
+    console.log(myname)
+
+    confirm('Are you sure you want to exit?')
+
+    num1=parseInt(prompt('Enter the first number'));
+    num2=parseInt(prompt('Enter the second number'));
+    result=num1+num2;
+    console.log(result)
+
+    function example(){
+        myname1='daniya';
+    }
+    example()
+    console.log(myname1)
+
+    console.log(4%2);
+    
+    n1=5;
+    console.log(++n1);
+    n1++;
+
+    console.log(2**4);
+
+    x=10;
+    x=x+7;
+    console.log(x);
+
+    x!=10;
+    console.log(x>10);
+
+    x1=10;
+    console.log(x1=='10');
+    console.log(x1==='10');
+
+    console.log(x>1 && x<100);
+
+    
+    
+
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1 id="H">heading</h1>
+<p class="para">hello hi a b c d e f g h i j k l m n</p>
+<p class="para">a s d f g h j k</p>
+
+<label for="">Enter first number</label>
+<input type="text" name="" id="num1">
+<br>
+<label for="">Enter second number</label>
+<input type="text" name="" id="num2">
+<br>
+<button onclick="addnumbers()">Add</button>
+<br>
+<label for="">Result</label>
+<input type="text" name="" id="ans">
+<br><br>
+
+
+<script>
+function addnumbers(){
+    var number1=parseInt(document.getElementById('num1').value);
+    var number2=parseInt(document.getElementById('num2').value);
+    var sum=number1+number2;
+    document.getElementById('ans').value=sum;
+    console.log(sum)
+}
+
+
+var a=document.getElementById('H');
+console.log(a);
+var b=document.getElementById('H').innerHTML;
+console.log(b);
+var c=document.getElementsByClassName('para')[0].innerHTML;
+console.log(c);
+var d=document.getElementsByTagName('p');
+console.log(d);
+
+// n=1
+// for (i=5;i>=n;i--){
+//     for (j=1;j<i;j++){
+//         document.write('*')
+//     }
+//     document.write("<br>")
+// }
+
+// x=parseInt(prompt('Enter the number'));
+
+// if (x==1){
+//     console.log('The number is not prime.')
+// }
+
+// else if(x==2 || x==5 || x==7 || x==3){
+//     console.log('The number is prime.')
+// }
+
+// else if(x>2){
+//     if(x%2==0 || x%3==0 || x%5==0 || x%7==0){
+//         console.log('The number is not prime.')
+//     }
+//     else{
+//         y=x++;
+//         if (y%x==0){
+//             console.log('The number is not prime.')
+
+//         }
+//         else{
+//             console.log('The number is prime.')
+//         }
+//     }
+// }
+// else{
+//     concole.log(invalid)
+// }
+
+
+// for (i=1;i<=10;i++){
+//     if (i==5){
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+</script>
+
+</body>
+</html>

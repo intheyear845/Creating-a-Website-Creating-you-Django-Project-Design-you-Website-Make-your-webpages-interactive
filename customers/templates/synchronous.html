@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- <script>
+    function fun1(){
+        return 'message1';
+    }
+    function fun2(){
+        setTimeout(()=>{
+            return 'message2';
+        },10000);
+    }
+    function fun3(){
+        return 'message3';
+    }
+    console.log(fun1());
+    console.log(fun2());
+    console.log(fun3());
+
+</script> -->
+asynchronous operation with promise
+<script>
+    function fun1(){
+        return 'message1';
+    }
+    function fun2(){
+        return new Promise(function (resolve, reject){
+            setTimeout(function(){
+            resolve('message2')
+        },1000);
+        })
+    }
+    function fun3(){
+        return 'message3';
+    }
+    console.log(fun1());
+    let message2 = fun2();
+    console.log(message2);
+    console.log(fun3());
+
+</script>
+</body>
+</html>

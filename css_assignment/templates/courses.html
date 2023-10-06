@@ -1,0 +1,50 @@
+{% extends "master.html" %}
+{% load static %}
+
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'styles/course.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+    
+<div id="paradiv">
+    <h2>Explore Our internship programme</h2>
+    <p id="para">baabtra.com offers you courses and training programs that will enable you to master programming in depth. Enroll and start learning with the experts in the industry
+        We offer PHP Training with Laravel Framework, Python Training with Django Framework, Angular Training and Node.js Training.</p>
+</div>
+<br><br><br>
+
+<div class="grid-container">
+
+    <div class="grid-item">
+        <img src="{% static 'images/python.png' %}" class="course_imge" alt="">
+        <h3>Python Full Stack Development</h3>
+        <p>
+            Python is one of the most popular programming languages in the world nowadays. If you look at the future and world like to work in the feild of Big Data, Cloud computing, Machine Learning, Data Science, Robotics, Artificial Intelligence etc, you should consider learning this language. Python rogrammers are getting more demand in the IT industry.
+        </p>
+    </div>
+
+    <div class="grid-item">
+        <img src="{% static 'images/php.jpg' %}" class="course_imge" alt="">
+        <h3>PHP Full Stack Development</h3>
+        <p>
+            PHP is the one of the most common programming languages used by SME companies for software development and hence there will be enough job opportunities for PHP developers all the time. Candidates also find this as an easy language to master. For those who have knoledge in framework like Laravel, getting a software developer job would be an easy task.
+        </p>
+    </div>
+
+    <div class="grid-item">
+        <img src="{% static 'images/angular.jpg' %}" class="course_imge" alt="">
+        <h3>Angular - Front End Development</h3>
+        <p>
+            This program would be a great choice for those who would like to work as a frontend developer in a software company. Baabtra offers internship programs in Front end development which makes a candidate capable of handling client side application with Angular. Angular is a typescript based web application framework supported by Google.
+        </p>
+    </div>
+
+</div>
+<br><br><br>
+
+{% endblock %}
+

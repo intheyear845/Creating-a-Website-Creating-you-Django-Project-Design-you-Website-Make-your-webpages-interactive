@@ -1,0 +1,41 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block header %}
+<link rel="stylesheet" href="{% static 'styles/home.css' %}">
+{% endblock %}
+
+{% block content %}
+
+   
+    <div class="banner">
+        <img src="{% static 'images/banner.jpg' %}" width="100%" alt="">
+    </div>
+
+    <div class="content_head">
+        <h1 align="center" id="heading">GETTING A SOFTWARE JOB IS SO EASY WITH OUR INTERNSHIP PROGRAM</h1>
+    <p>Learn programming from the most trusted software training company in Calicut with highest placement record. Enroll for software courses and internship programs in Python, Java, PHP, Angular or Node.js to start your career.</p>
+    </div>
+
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <h3 align="center">Our Office</h3>
+            <img src="{% static 'images/baabtra_offic.jpg' %}" alt="" width="250">
+        </div>
+
+        <div class="grid-item">
+            <h3 align="center">Best Python Training In Calicut</h3>
+            <p>Python is one of the hot programming languages nowadays.
+                Many freshers are learning this software development technology and are getting placed as Python Deveploper in Software Companies. Baabtra has the highest number of candidates got trained in Python in the last year.
+                We train you to develop a web application using Python with Django framework and MySql database. Python trainng course for freshers to make them good programmers through quality trainng in Python & Django Framework in Calicut.</p>
+        </div>
+
+        <div class="grid-item">
+            <h3 align="center">Life @ baabtra</h3>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/LIGnK7711fA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+{% endblock %}
+

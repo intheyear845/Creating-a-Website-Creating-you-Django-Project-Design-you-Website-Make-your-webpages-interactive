@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- <script>
+    const jsonString = '{"name":"daniya","age":18,"course":"chemE","isstudent":true}'
+    try {
+        const parsedObject = JSON.parse(jsonString);
+        console.log('name:',parsedObject.name);
+        console.log('age:',parsedObject.age);
+        console.log('course:',parsedObject.course);
+        console.log('isstudent:',parsedObject.isstudent);
+    } catch (error) {
+      console.error('errorParsing JSON',error);  
+    }
+</script> -->
+
+<!-- <script>
+    fetch('data.json').then(response => response.json()).then(data => {
+        console.log('parsed JSON:',data);
+    })
+</script> -->
+
+<script>
+    const data = {
+        "name":"Daniya",
+    "age":18,
+    "course":"ChemE"
+    }
+    const jsonString = JSON.stringify(data);
+    console.log(jsonString);
+</script>
+
+</body>
+</html>

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'libraian',
     'customers',
+    'css_assignment',
 ]
 
 MIDDLEWARE = [
@@ -121,7 +122,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'customers/static'),
-    os.path.join(BASE_DIR,'libraian/static')
+    os.path.join(BASE_DIR,'libraian/static'),
 ]
 
 # Default primary key field type

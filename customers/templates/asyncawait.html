@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+     function fun1(){
+        return 'message1';
+    }
+    function fun2(){
+        return new Promise(function (resolve, reject){
+            setTimeout(function(){
+            resolve('message2')
+        },1000);
+        })
+    }
+    function fun3(){
+        return 'message3';
+    }
+    
+    async function printData(){
+        console.log(fun1());
+    let message2 = await fun2();
+    console.log(message2);
+    console.log(fun3());
+    }
+    printData()
+</script>
+
+</body>
+</html>

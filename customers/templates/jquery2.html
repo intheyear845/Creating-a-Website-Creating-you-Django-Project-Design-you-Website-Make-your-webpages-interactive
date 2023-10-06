@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+</head>
+<body>
+    
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est non totam ullam et asperiores sunt dolor. Voluptatibus recusandae magnam eligendi.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, rem?</p>
+<p>Lorem ipsum dolor sit amet.</p>
+
+<button id="b1">Button</button>
+<button id="b2">slide down</button>
+<div id="div1" style="background-color: red; border: 1px solid; height: 800px;width: 400px;display: none;"></div>
+
+<button id="b3">slide up</button>
+<button id="b4">Sequence of effects</button>
+
+<p id="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi soluta eveniet sed ducimus eum accusantium repellat? Maxime eveniet in provident.</p>
+
+<button id="b5">Paragraph</button>
+
+<script>
+
+// DISPLAY EFFECTS
+
+$('#b1').click(function(){
+    // $('p').hide();
+    // $('p').show();
+    $('p').toggle();
+})
+
+$('p').click(function(){
+    $(this).hide();
+})
+
+$('#b2').click(function(){
+    $('#div1').slideDown(4000);
+})
+
+$('#b3').click(function(){
+    $('#div1').slideUp();
+})
+
+$('#b4').click(function(){
+    $('#div1').slideDown(4000).delay(10000).slideUp(3000);
+})
+
+$('#b5').click(function(){
+    // $('#para1').css("background-color", "red");
+    $('#para1').css({
+        "background-color":"red",
+        "font-size":"150%"
+    });
+})
+
+// fade in/fade out, toggle
+
+
+</script>
+</body>
+</html>

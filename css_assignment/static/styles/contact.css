@@ -1,0 +1,23 @@
+.link_button{
+    color: #ffffff!important;
+    border-style: solid;
+    border-width: 9px!important;
+    border-color: #003651;
+    border-radius: 100px;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif!important;
+    font-weight: 600!important;
+    text-transform: uppercase!important;
+    background-color: #003651;
+    text-decoration: none;
+}
+
+input :nth-of-type(text){
+    width: 250px;
+    height: 25px;
+}
+
+td{
+    width: 250px;
+}

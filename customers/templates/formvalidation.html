@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    
+</head>
+<body>
+    
+<form action="" method="get" name="form1">
+
+<label for="">Username</label>
+<input type="text" name="_username" id="user_name"> <br>
+<label for="" id="username_error"></label> <br>
+<label for="">Password</label>
+<input type="password" name="_password" id="pass_word"> <br>
+<label for="" id="password_error"></label><br><br>
+<button onclick="return login()">Login</button>
+
+<p id="para" style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores reprehenderit at aliquid accusamus veritatis blanditiis non sapiente mollitia nisi atque fugit maiores pariatur id quia facilis autem, porro aut culpa!</p>
+
+</form>
+
+<script>
+     user_name.blur()
+function login(){
+var username_status=1
+var password_status=1
+var username=document.getElementById('user_name').value;
+console.log(username);
+var password=document.getElementById('pass_word').value;
+console.log(password);
+if (username==""){
+    username_error.innerHTML="Please enter your username.";
+    username_error.style.color="red";
+    user_name.style.borderColor="red";
+    // return false;
+    username_status=0;
+}
+else {
+    username_error.style.display="none";
+    user_name.style.borderColor="black";
+    // return true;
+    username_status=1;
+}
+if (password==""){
+    password_error.innerHTML="Please enter your password.";
+    password_error.style.color="red";
+    pass_word.style.borderColor="red";
+    // return false;
+    password_status=0;
+}
+else {
+    password_error.style.display="none";
+    pass_word.style.borderColor="black";
+    // return true;
+    password_status=1
+}
+if (username_status==0 || password_status==0){
+    return false;
+}
+else {
+    return true;
+}
+}
+
+
+
+</script>
+
+</body>
+</html>

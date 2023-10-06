@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<style>
+    #box-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 150px;
+        height: 150px;
+    }
+
+    .box{
+        background-color: red;
+        transition: all o.5s;
+    }
+</style>
+</head>
+<body>
+    
+<button id="rotateBtn">Rotate Box</button>
+<div id="box-container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+<script>
+
+$('#rotateBtn').click(function(){
+    $('#box-container').animate({
+        width: '300px',
+        height: '300px',
+        gap: '5px'
+    }, 1000);
+    $('.box').animate({
+        width: '100px',
+        height: '100px',
+        margin: '1%'
+    }, 1000);
+    $('.box').css({
+        transform: 'rotate(90deg)',
+        transition: 'all 1s'
+    });
+})
+
+</script>
+</body>
+</html>

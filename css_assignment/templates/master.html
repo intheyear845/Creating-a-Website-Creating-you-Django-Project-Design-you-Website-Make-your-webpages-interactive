@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    {% block header %}
+
+    {% endblock %}
+    <style type="text/css">
+        p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="logo_div">
+        <img src="{% static 'images/logo.png' %}" alt="">
+        <img style="text-align: right; float: right; margin-top:20px;" alt="">
+        <img src="{% static 'images/login.png' %}" height="180">
+        <img src="{% static 'images/register.png' %}" height="180" style=>
+    </div>
+
+</div>
+
+<div class="topnav">
+<a class="active" href="{% url 'css_asg:Home' %}">Home</a>
+<a href="{% url 'css_asg:Courses' %}">Courses</a>
+<a href="{% url 'css_asg:Contact' %}">Contact Us</a>
+
+</div>
+
+<div class="content">
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+<div class="footer">
+    <div class="grid-container">
+        <div class="grid-item" style="padding: 5px; padding-left: 20px;">
+            baabtra <br>
+            Mentoring Partner
+        </div>
+        <div class="grid-item" style="padding: 5px;">
+            <b>Email:</b> infor@baabtra.com<br>
+            <b>Phone:</b> +91-8592 058 444<br>
+        </div>
+        <div class="grid-item" style="padding: 5px;">
+            <b>Address</b> <br>
+            5<sup>th</sup> Floor, CaFIT Square, <br>Hi lite Bsuiness Parl, Kozhikode
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

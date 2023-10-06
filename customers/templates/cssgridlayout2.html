@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        }
+        .griditem1{
+            background-color: orange;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .griditem2{
+            background-color: purple;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .griditem3{
+            background-color: teal;
+        }
+        .griditem4{
+            background-color: turquoise;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .griditem5{
+            background-color: rgb(202, 30, 30);
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .griditem6{
+            background-color: rgb(12, 12, 107);
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .griditem7{
+            background-color: rgb(66, 66, 255);
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .griditem8{
+            background-color: yellow;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .griditem9{
+            background-color: blue;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .griditem10{
+            background-color: yellow;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .griditem11{
+            background-color: violet;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .griditem12{
+            background-color: orangered;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="griditem1">1</div>
+        <div class="griditem2">2</div>
+        <div class="griditem3">3</div>
+        <div class="griditem4">4</div>
+        <div class="griditem5">5</div>
+        <div class="griditem6">6</div>
+        <div class="griditem7">7</div>
+        <div class="griditem8">8</div>
+        <div class="griditem9">9</div>
+        <div class="griditem10">10</div>
+        <div class="griditem11">11</div>
+        <div class="griditem12">12</div>
+    </div>
+</body>
+</html>

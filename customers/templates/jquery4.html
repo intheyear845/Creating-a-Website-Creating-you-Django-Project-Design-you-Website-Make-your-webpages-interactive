@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+</head>
+<body>
+    
+<div id="d1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quasi facere voluptates doloremque voluptatum! Voluptatem vero voluptas nihil vitae in alias!
+        <span id="sp1">Laudantium quia laborum cum aspernatur obcaecati</span> Laudantium quia laborum cum aspernatur obcaecati, fugiat necessitatibus sequi deleniti iusto eum nobis atque assumenda, eaque nihil, quasi voluptates eveniet quibusdam aut temporibus? Maxime accusamus veritatis expedita minima quo.</p>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+    </div>
+
+    <div id="d2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam modi similique amet cum molestias voluptas nulla. Nobis repellendus, maiores nesciunt totam dolorum placeat, laborum neque odio, rerum molestiae quibusdam praesentium!</p>
+    </div>
+    <div id="d3">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p>Lorem ipsum dolor sit.</p>
+            Excepturi, eaque.</span>
+    </div>
+    <div id="d4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, consequatur?</span>
+            Ipsam saepe vitae voluptates commodi. Officia nihil quam quasi quaerat facilis ullam?</p>
+    </div>
+
+    <button id="b1">Click here</button>
+    <br><br><br>
+
+    <div style="height: 100px; width: 100px; background-color: blue; position: relative;" id="box">
+
+    </div>
+
+
+    <script>
+$('#b1').click(function(){
+    // $('#d1').children().css("background-color","blue");
+    // $('#sp1').parent().css("background-color","yellow");
+    $('div').first().css("background-color","blue");
+})
+
+$('#box').click(function(){
+    $('#box').animate({
+        top: "+=200px",
+        left: "+=200px",
+        height: '300px',
+        width: '300px',
+        opacity: '0.5'
+    }, 1000)
+})
+    </script>
+</body>
+</html>
